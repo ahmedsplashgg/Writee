@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="description" content="a lightweight website to let you write any text, with complete control of it.">
+  
+  <meta name="keywords" content="writing, distraction-free, text, scripts">
+  
+  <meta name="author" content="Johnathan" />
+  
+  <title>Writee website</title>
+  
+  <!-- HTML -->
+  
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="writee.jpg">
+  
+</head>
+
+<body>
+  <dialog class="stats"></dialog>
+  
+  <dialog class="settings">
+    <h2 style="text-align: center;">Settings</h2>
+    <h2><small>Preferences</small></h2>
+    <label>
+      Font family
+      <select id="font">
+        <option value="serif">serif</option>
+        <option value="sans-serif">sans-serif</option>
+        <option value="monospace">monospace</option>
+        <option value="cursive">cursive</option>
+        <option value="console">console</option>
+      </select>
+    </label> <br>
+    
+    <label>
+      Font size
+      <input type="number" id="size" value="12">
+    </label>
+    <br>
+    
+    <label>
+      Font weight
+      <select id="weight">
+        <option value="normal">normal</option>
+        <option value="bold">bold</option>
+      </select>
+    </label> <br>
+    
+    <label>
+      columns
+      <input type="number" value="40" id="cols">
+    </label><br>
+    
+    <h2><small>Appearance</small></h2>
+    
+    <label>
+      theme
+      <select id="bgt">
+        <option value="white">Github</option>
+        <option value="black">Dracula </option>
+      </select>
+    </label> <br>
+    
+    <label>
+      background color
+      <input type="text" list="colors" id="bgc" value="white">
+      <datalist id="colors">
+        <option value="red"></option>
+        <option value="blue"></option>
+        <option value="white"></option>
+        <option value="green"></option>
+        <option value="orange"></option>
+        <option value="black"></option>
+        <option value="yellow"></option>
+        <option value="grey"></option>
+        <option value="purple"></option>
+        <option value="violet"></option>
+      </datalist>
+    </label> <br>
+    
+    <label>
+      text color
+      <input id="color" type="text" list="colors" value="black" />
+    </label> <br>
+    
+    <h4>Line Wrap Mode</h4>
+    <label>
+      <input type="radio" name="wrapMethod" checked>
+      Wrap
+    </label><br>
+    
+    <label>
+      <input type="radio" name="wrapMethod">
+      No Wrap
+    </label>
+    <br> <br>
+    
+    <button onclick="document.querySelector('.settings').close()" style="background-color: transparent; border: 1px solid black;">close</button>
+  </dialog>
+  
+  <div>
+    <button id="info">i</button>
+    <button id="settings">⚙️</button>
+    
+    <textarea cols="40" rows="10" placeholder="Start typing here..."></textarea><br>
+    
+    <small id="chars-length">0/0</small><br>
+    
+    <button class="edits">
+      <ruby>⧉
+        <rp><rt>copy</rt></rp>
+      </ruby>
+    </button>
+    <button class="edits">
+      <ruby>⌫
+        <rp><rt>delete</rt></rp>
+      </ruby>
+    </button>
+    <button class="edits">
+      <ruby>📋
+        <rp><rt>paste</rt></rp>
+      </ruby>
+    </button>
+    <br>
+  </div>
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</HTML>

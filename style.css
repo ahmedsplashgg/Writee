@@ -1,0 +1,67 @@
+.settings{
+  border: none;
+  width: fit-content;
+  box-shadow: 15px 15px 20px darkgrey;
+  label{
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    text-align: left;
+    font-size: 13px;
+    input{
+      width: 100px;
+      text-align: right;
+      justify-content: center;
+    }
+  }
+  input{
+    width: 100px;
+    text-align: right;
+    justify-content: center;
+  }
+}
+#settings{
+  border: none;
+  background-color: transparent;
+  text-align: right;
+  margin-left: 300px;
+  padding: 10px;
+}
+#info{
+  background-color: transparent;
+  border-radius: 70px;
+  width: 20px;
+  height: 20px;
+  font-family: cursive;
+  border: 1px solid black;
+  text-align: left;
+}
+textarea{
+  font-family: serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  margin: 5px;
+  background-color: white;
+  white-space: normal;
+}
+.stats{
+  padding: 1.2em;
+  width: 300px;
+  height: 150px;
+  white-space: pre-line;
+  background-color: white;
+  border: none;
+}
+input[type="radio"]{
+  text-align: left;
+}
+#chars-length{
+  font-size: 10px;
+}
+.edits{
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: #000;
+}
